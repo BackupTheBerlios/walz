@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src/java/main"/>
-	<classpathentry kind="src" path="src/java/test"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/karsten/programs/maven/maven-1.0-beta-10/repository/junit/jars/junit-3.8.1.jar"/>
-	<classpathentry kind="lib" path="/home/karsten/programs/maven/maven-1.0-beta-10/repository/commons-cli/jars/commons-cli-1.0.jar"/>
-	<classpathentry kind="output" path="classes"/>
-</classpath>
