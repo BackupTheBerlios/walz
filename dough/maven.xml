@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project xmlns:ant="jelly:ant">
+
+  <postGoal name="java:compile">
+
+    <ant:copy file="${maven.src.dir}/java/main/version.properties" 
+              todir="${maven.build.dest}"/>
+    <replace file="${maven.build.dest}/version.properties"
+             token="@VERSION@"
+             value="${dough.version}"/>
+
+  </postGoal>
+
+ </project>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <pomVersion>3</pomVersion>
+  <name>dough</name>
+  <groupId>dough</groupId>
+  <id>dough</id>
+  <currentVersion>${dough.version}</currentVersion>
+  <organization>
+    <name>walz.org</name>
+    <url>walz.berlios.de</url>
+    <!-- header logo, left-->
+    <!--<logo>/img/logo.png</logo>-->
+  </organization>
+  <inceptionYear>2003</inceptionYear>
+  <shortDescription>dough, dough, dough</shortDescription>
+
+  <description>
+    dough, dough, dough
+  </description>
+
+  <!-- used by JavaDoc plugin -->
+  <package>org.walz</package>
+
+  <url>http://walz.berlios.de/</url>
+  <!-- header logo, right -->
+  <!--<logo>/img/logo.png</logo>-->
+  <siteAddress>walz.berlios.de</siteAddress>
+  <siteDirectory>/www/www.berlios.de</siteDirectory>
+
+  <developers>
+    <developer>
+      <name>Karsten Menne</name>
+      <id>kmenne</id>
+      <email>karsten.menne(at)gmx.net</email>
+      <roles>
+        <role>Coder</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Eckart Windelband</name>
+      <id>eckart</id>
+      <email>ewindelband(at)gmx.de</email>
+      <roles>
+        <role>Coder</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <url>http://www.junit.org</url>
+    </dependency>
+    <dependency>
+      <groupId>commons-cli</groupId>
+      <artifactId>commons-cli</artifactId>
+      <version>1.0</version>
+      <url>http://jakarta.apache.org/commons/</url>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/java/main</sourceDirectory>
+    <unitTestSourceDirectory>src/java/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/*Test.java</include>
+      </includes>
+    </unitTest>
+    <resources>
+    </resources>
+  </build>
+
+  <reports>
+    <report>maven-junit-report-plugin</report>
+    <report>maven-license-plugin</report><!-- broken in beta-10 ?-->
+    <report>maven-jxr-plugin</report>
+    <!--<report>maven-javadoc-plugin</report>-->
+    <report>maven-checkstyle-plugin</report>
+    <report>maven-pmd-plugin</report>
+    <report>maven-jdepend-plugin</report>
+    <report>maven-tasklist-plugin</report>
+  </reports>
+
+</project>

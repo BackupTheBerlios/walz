@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.1//EN"
+                        "http://www.puppycrawl.com/dtds/configuration_1_1.dtd">
+<module name="Checker">
+  
+  <module name="PackageHtml"/>
+  
+  <module name="TreeWalker">
+    
+    <!-- IMPORTS -->
+    <module name="AvoidStarImport"/>  
+    <module name="IllegalImport"/>
+    <module name="RedundantImport"/>
+    <module name="UnusedImports"/>
+    <module name="RedundantImport"/>
+    
+    <!-- NAMING CONVENTIONS -->
+    <module name="PackageName"/>
+    <module name="ConstantName"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="LocalVariableName"/>
+    <module name="MemberName"/> 
+    <module name="MethodName"/> 
+    <module name="ParameterName"/>
+    <module name="StaticVariableName"/>
+    <module name="TypeName"/>
+    
+    <!-- JAVA DOC -->
+    <module name="JavadocType">
+      <property name="scope" value="public"/>
+    </module>    
+    <module name="JavadocMethod">
+      <property name="scope" value="public"/>
+    </module>
+    <module name="JavadocVariable">
+      <property name="scope" value="public"/>
+    </module>
+    
+    <!-- HEADER -->
+    <module name="Header">
+      <property name="headerFile" value="LICENSE.txt"/>
+    </module>
+  
+    <!-- SIZE LENGTH VIOLATIONS -->
+    <module name="FileLength"/>
+    <module name="LineLength">
+      <property name="max" value="100"/>
+    </module>
+    <module name="MethodLength"/>
+    <module name="ParameterNumber">
+      <property name="max" value="4"/>
+    </module>
+  
+    <!-- WHITESPACE -->
+    <module name="EmptyForIteratorPad"/> <!-- what does this mean? -->
+    <module name="NoWhitespaceAfter">
+      <property name="tokens" value="DOT"/>
+      <property name="allowLineBreaks" value="false"/>
+    </module>
+    <module name="NoWhitespaceBefore">
+      <property name="tokens" value="DOT"/>
+      <property name="allowLineBreaks" value="true"/>
+    </module>      
+    <module name="OperatorWrap"/>
+    <module name="ParenPad"/>
+    <module name="TabCharacter"/>
+    <module name="WhitespaceAround">
+      <property name="tokens" value="ASSIGN"/>
+    </module>
+    
+    <!-- BLOCKS -->
+    <module name="EmptyBlock"/>
+    <module name="LeftCurly">
+      <property name="option" value="nl"/>
+    </module>
+    <module name="RightCurly"/>
+    <module name="NeedBraces"/>
+    <module name="AvoidNestedBlocks"/>
+        
+    <!-- CODING PROBLEMS -->
+    <module name="DoubleCheckedLocking"/>
+    <module name="EmptyStatement"/>
+    <module name="EqualsHashCode"/>
+    <module name="HiddenField">
+      <property name="tokens" value="VARIABLE_DEF"/>
+    </module>
+    <module name="InnerAssignment"/>
+    <module name="MagicNumber"/>
+    <module name="MissingSwitchDefault"/>
+    <module name="SimplifyBooleanExpression"/>
+    
+    <!-- CLASS DESIGN -->
+    <module name="VisibilityModifier"/>
+    <module name="FinalClass"/>
+    <module name="InterfaceIsType"/>
+    <module name="HideUtilityClassConstructor"/>
+    
+    <!-- MISC. -->
+    <module name="TodoComment"/>
+    <module name="ArrayTypeStyle"/>
+    
+  </module>
+
+</module>
